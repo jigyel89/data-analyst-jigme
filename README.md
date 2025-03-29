@@ -35,6 +35,8 @@ Methodology
 
 The dataset was downloaded and ingested into Amazon S3 using structured folder hierarchies. Each step adhered to the Open Data Portal’s guidelines for weekly updates. AWS S3 (st-raw-jig) served as the raw data repository.
 
+![Alt text](gh1.jpeg)
+
 2.	Data Preparation:
 
 Data was profiled and cleaned using AWS Glue DataBrew. Key operations included:
