@@ -11,6 +11,8 @@ Objective
 
 The primary objective of this descriptive analysis is to summarize and interpret key characteristics of painted bikeways in Vancouver, using the "Bikeways – Painted Lanes" dataset. The aim is to uncover patterns in construction timelines, street segment types, bikeway subtypes, and operational status, ultimately supporting informed decisions in city planning, safety enhancement, and infrastructure investment.
 
+![Alt text](gh21.jpg)
+
 Dataset
 
 The dataset was downloaded from the City of Vancouver’s Open Data Portal and includes 24 columns with information about painted bikeways. It captures diverse aspects of each bikeway segment, enabling a multidimensional understanding of their development and characteristics. Key fields include:
