@@ -164,6 +164,10 @@ Tools and Technologies
 
 •	AWS Services: S3 (storage), Glue (ETL), Glue DataBrew (cleaning), Glue Crawler (schema discovery), Athena (SQL querying), CloudWatch and CloudTrail (monitoring), KMS (encryption)
 
+
+![Alt text](gh20.jpg)
+
+
 •	File Formats: CSV (for general access), Parquet (for optimized analytics with partitioning)
 
 •	Security: Data was protected using AWS KMS encryption, and versioning/replication was used for resilience and recovery
