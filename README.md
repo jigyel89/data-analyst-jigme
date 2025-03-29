@@ -36,7 +36,7 @@ Methodology
 The dataset was downloaded and ingested into Amazon S3 using structured folder hierarchies. Each step adhered to the Open Data Portal’s guidelines for weekly updates. AWS S3 (st-raw-jig) served as the raw data repository.
 
 ![Alt text](gh1.jpg)
-
+![Alt text](gh2.jpg)
 2.	Data Preparation:
 
 Data was profiled and cleaned using AWS Glue DataBrew. Key operations included:
@@ -46,28 +46,28 @@ o	Addressing missing values in columns like Construction note, Upgrade year, and
 o	Fixing delimiter issues that initially caused incorrect column separation (changed from AWS default  delimiter ‘,’ to delimiter used for the dataset which was ‘;’)
 
 o	Renaming columns using CamelCase and ensuring consistent data types across numeric and string fields
-
+![Alt text](gh3.jpg)
 3.	Data Storage & Cataloging:
 
 The cleaned dataset was exported to S3 in both CSV (for human-readable access) and Parquet (for optimized querying) formats. AWS Glue Crawlers were used to extract schema information and store it in the AWS Glue Data Catalog for use in Amazon Athena SQL queries.
-
+![Alt text](gh4.jpg)
 4.	Summarization & ETL Processing:
 
 AWS Glue Studio's Visual ETL feature enabled transformation and summarization without coding. Segment-level aggregations were performed to answer specific questions related to year-wise construction, subtype growth, and bikeway activity status.
-
+![Alt text](gh5.jpg)
 5.	Descriptive Analysis
 
 The primary objective of this analysis is to answer key business questions related to street segment lengths and bikeway construction. I performed data queries using Amazon Athena and SQL to derive insights efficiently while minimizing query costs.
 
 Questions Addressed
 1.	What is the average length of a street segment?
-
+![Alt text](gh6.jpg)
 2.	Which street segment is the longest, and which one is the shortest?
- 
+ ![Alt text](gh7.jpg)
 3.	For each type of street segment, what is the longest and shortest segment?
- 
+ ![Alt text](gh8.jpg)
 4.	How much bikeway has been built each year, broken down by street segment type?
-
+![Alt text](gh9.jpg)
 Key Findings
 
 Street Segment Length Distribution
@@ -96,7 +96,8 @@ Bikeway Status and Street Type Correlation
 •	Arterial roads were more likely to have active bikeways, suggesting they receive more attention for upkeep and public usage.
 
 •	Residential streets had a more mixed activity status, possibly due to lower usage intensity or lesser maintenance priority.
-
+![Alt text](gh10.jpg)
+![Alt text](gh11.jpg)
 Year-over-Year Growth by Subtype
 
 •	Buffered lanes exhibited a sharp increase in deployment after 2015, likely due to new cycling safety initiatives.
@@ -106,13 +107,13 @@ Year-over-Year Growth by Subtype
 Visualizations Used
 
 •	The annual number of bikeway segments constructed 
-
+![Alt text](gh12.jpg)
 •	The spread of segment lengths across street types 
-
+![Alt text](gh13.jpg)
 •	The breakdown of subtypes within each street type (Diagram 16)
-
+![Alt text](gh14.jpg)
 •	Multi-variable correlations, such as status vs. subtype vs. segment type
-
+![Alt text](gh15.jpg)
  
 
 Recommendations
